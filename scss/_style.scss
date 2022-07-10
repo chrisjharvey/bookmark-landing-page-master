@@ -1,0 +1,51 @@
+#hero {
+  height: 100vh;
+
+  .hero-inner {
+    @include flexbox;
+    @include align-items($value: center);
+    @include justify-content($value: space-between);
+
+    height: 100vh;
+    position: relative;
+
+    .rectangle {
+      width: 1000px;
+      height: 350px;
+      background: $light-blue;
+      position: absolute;
+      top: 300px;
+      right: -500px;
+      z-index: -1;
+      border-radius: 316.5px;
+    }
+
+    .hero-text {
+      h1 {
+        font-size: 3rem;
+        color: $black;
+      }
+      p {
+        max-width: 540px;
+        font-size: 1.125rem;
+      }
+    }
+  }
+}
+
+#features {
+  text-align: center;
+
+  .features-text p {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+#tabs {
+  .tab-items {
+    @include flexbox;
+    @include align-items($value: center);
+    @include justify-content($value: space-evenly);
+  }
+}
