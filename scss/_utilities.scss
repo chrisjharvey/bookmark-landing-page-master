@@ -52,6 +52,17 @@ li {
   color: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.btn-red:hover {
+  cursor: pointer;
+  padding: 12px 28px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid $red;
+  color: $red;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .btn-blue {
   cursor: pointer;
   padding: 15px 30px;
@@ -81,5 +92,16 @@ li {
   border-radius: 10px;
   background: #fff;
   color: $black;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.btn-white:hover {
+  cursor: pointer;
+  padding: 13px 28px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid $dark-grey;
+  color: $dark-grey;
+  background: #fff;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }

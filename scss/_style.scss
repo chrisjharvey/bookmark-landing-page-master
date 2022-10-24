@@ -1,12 +1,12 @@
 #hero {
-  height: 100vh;
+  height: 90vh;
 
   .hero-inner {
     @include flexbox;
     @include align-items($value: center);
     @include justify-content($value: space-between);
 
-    height: 100vh;
+    height: 90vh;
     position: relative;
 
     .rectangle {
@@ -33,11 +33,16 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .hero-inner {
+    @include flex-direction($direction: column-reverse);
+  }
+}
 #features {
   text-align: center;
 
   .features-text p {
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
   }
 }
@@ -46,6 +51,16 @@
   .tab-items {
     @include flexbox;
     @include align-items($value: center);
-    @include justify-content($value: space-evenly);
+    @include justify-content($value: center);
+    // max-width: 900px;
+    // margin: 0 auto;
+
+    .tab-item {
+      padding: 20px 40px;
+    }
+  }
+  .tab-border {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
