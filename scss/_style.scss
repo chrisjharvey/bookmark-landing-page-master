@@ -47,20 +47,57 @@
   }
 }
 
-#tabs {
-  .tab-items {
-    @include flexbox;
-    @include align-items($value: center);
-    @include justify-content($value: center);
-    // max-width: 900px;
-    // margin: 0 auto;
+#tab-items {
+  .tabs  {
+     @include flexbox;
+     @include align-items($value: center);
+     @include justify-content($value: space-evenly);
+    margin: 20px auto;
+    
 
-    .tab-item {
+     a {
       padding: 20px 40px;
+      color: red;
+      border-bottom: $red;
     }
   }
   .tab-border {
     max-width: 1000px;
     margin: 0 auto;
+  }
+}
+
+#tab-hero {
+  height: 600px;
+
+  .tab-inner {
+    @include flexbox;
+    @include align-items($value: center);
+    @include justify-content($value: space-between);
+
+    height: 600px;
+    position: relative;
+
+    .tab-rectangle {
+      width: 1000px;
+      height: 350px;
+      background: $light-blue;
+      position: absolute;
+      top: 200px;
+      left: -500px;
+      z-index: -1;
+      border-radius: 316.5px;
+    }
+
+    .tab-text {
+      h1 {
+        font-size: 3rem;
+        color: $black;
+      }
+      p {
+        max-width: 540px;
+        font-size: 1.125rem;
+      }
+    }
   }
 }
